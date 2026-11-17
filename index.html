@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4eee3">
+  <meta name="description" content="Invitation à une cérémonie de dot.">
+  <title>Invitation à la dot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="invitation">
+    <div class="ornament">✦</div>
+    <header class="intro">
+      <p class="eyebrow">Une célébration de l’amour et des familles</p>
+      <h1>Invitation<br><span>à la dot</span></h1>
+      <div class="gold-line"></div>
+      <p class="intro-copy">Deux familles, deux histoires, une belle union à célébrer.</p>
+    </header>
+
+    <section class="couple-section">
+      <div class="photo-frame">
+        <img src="assets/images/couple.jpg" alt="Photo du couple" class="couple-photo"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+        <div class="photo-placeholder">Ajoutez ici<br>la photo du couple</div>
+      </div>
+      <p class="couple-label">À l’honneur</p>
+      <h2 class="couple-names">[Prénom] <span>&</span> [Prénom]</h2>
+      <p class="couple-note">Ont le plaisir de vous inviter à partager ce moment précieux.</p>
+    </section>
+
+    <section class="families">
+      <div><p class="small-label">Famille de la future mariée</p><h3>[Nom de la famille]</h3></div>
+      <span class="family-ampersand">&</span>
+      <div><p class="small-label">Famille du futur marié</p><h3>[Nom de la famille]</h3></div>
+    </section>
+
+    <section class="event-card">
+      <p class="eyebrow">Vous êtes cordialement invités</p>
+      <h2>À la cérémonie de dot</h2>
+      <div class="details-grid">
+        <div class="detail"><span class="detail-icon">◷</span><p class="small-label">Date & heure</p><strong>[Jour, date]</strong><span>[Heure]</span></div>
+        <div class="detail"><span class="detail-icon">⌖</span><p class="small-label">Lieu</p><strong>[Nom de la salle / adresse]</strong><span>[Commune, ville]</span></div>
+      </div>
+      <a class="map-link" id="mapLink" href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer">Voir le lieu sur Google Maps ↗</a>
+    </section>
+
+    <section class="message">
+      <p>Votre présence sera pour nous une joie et une bénédiction.</p>
+      <span>Nous serons heureux de célébrer ce jour avec vous.</span>
+    </section>
+    <footer class="footer"><div class="gold-line"></div><p>Avec amour, les deux familles</p><span>✦</span></footer>
+    <div class="ornament bottom">✦</div>
+  </main>
+  <div class="actions"><button type="button" id="printButton">Télécharger / Imprimer en PDF</button></div>
+  <script src="script.js"></script>
+</body>
+</html>
