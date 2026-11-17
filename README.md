@@ -1,24 +1,18 @@
-# Invitation électronique – Cérémonie de dot
+# Invitation électronique — Cérémonie de dot
 
-Invitation numérique responsive au format portrait, avec une identité africaine moderne : beige, noir et doré.
+Modèle responsive mobile-first, palette beige, noir brun et doré.
 
-## Fichiers
-- `index.html` : contenu de l'invitation.
-- `style.css` : design responsive et impression.
-- `script.js` : lien Google Maps et impression PDF.
-- `assets/images/couple.jpg` : photo du couple à ajouter.
+## Démarrer
+Cloner le dépôt puis ouvrir `index.html` dans un navigateur. Avec VS Code, l’extension Live Server facilite l’aperçu.
 
-## Installation
-```bash
-git clone https://github.com/longesha/invitation-dote.git
-cd invitation-dote
-```
-Ouvrez le dossier dans Visual Studio Code, puis ouvrez `index.html` dans votre navigateur (ou utilisez Live Server).
+## Données de démonstration
+Les noms Grâce et David, les familles Mbuyi et Ilunga, la date du 17 décembre 2026 et la Salle La Perle sont fictifs. Remplacer ces exemples avant de partager l’invitation.
 
-## Personnalisation
-1. Dans `index.html`, remplacez les textes entre crochets : prénoms, familles, date, heure et lieu.
-2. Ajoutez la photo du couple dans `assets/images/` et nommez-la exactement `couple.jpg`.
-3. Dans `script.js`, remplacez `[Nom de la salle, commune, ville]` par l'adresse réelle pour activer le lien Google Maps.
-4. Cliquez sur « Télécharger / Imprimer en PDF », puis choisissez « Enregistrer au format PDF ».
+## Photo du couple
+Remplacer la photo d’illustration dans `index.html` par la photo autorisée du couple.
 
-**Note :** la carte interactive s'ouvre dans Google Maps depuis la version web. Le PDF garde le lien vers le lieu, car une carte interactive ne s'imprime pas de manière fiable.
+## PDF sur téléphone
+Appuyer sur « Télécharger l’invitation PDF ». Dans la fenêtre d’impression/partage du navigateur, choisir « Enregistrer au format PDF ». La mise en page d’impression est optimisée pour le format A4.
+
+## Lieu
+Le lien « Ouvrir l’itinéraire » lance Google Maps. Remplacer son URL par la recherche correspondant à l’adresse exacte de la salle.
