@@ -1,18 +1,15 @@
 # Invitation électronique — Cérémonie de dot
 
-Modèle responsive mobile-first, palette beige, noir brun et doré.
+Modèle responsive mobile et ordinateur, design beige, noir brun et doré. Le bouton télécharge ou partage la carte en image PNG.
 
 ## Démarrer
-Cloner le dépôt puis ouvrir `index.html` dans un navigateur. Avec VS Code, l’extension Live Server facilite l’aperçu.
+Clonez le dépôt puis ouvrez `index.html` dans un navigateur. Live Server dans VS Code est recommandé.
 
-## Données de démonstration
-Les noms Grâce et David, les familles Mbuyi et Ilunga, la date du 17 décembre 2026 et la Salle La Perle sont fictifs. Remplacer ces exemples avant de partager l’invitation.
+## Informations fictives à remplacer
+Familles : Mbuyi et Ilunga. Couple : Grâce et David. Date : samedi 19 décembre 2026. Heure : 14h00. Lieu : Salle La Perle, Golf, Lubumbashi. Ces informations sont uniquement des exemples.
 
-## Photo du couple
-Remplacer la photo d’illustration dans `index.html` par la photo autorisée du couple.
+## Ajouter la photo du couple
+Placez votre photo dans `assets/images/couple.jpg`. Dans `index.html`, remplacez le bloc `.photo-placeholder` par `<img class="couple-image" src="assets/images/couple.jpg" alt="Photo du couple">`. Ajoutez dans `style.css` : `.couple-image{width:100%;height:100%;object-fit:cover;display:block}`.
 
-## PDF sur téléphone
-Appuyer sur « Télécharger l’invitation PDF ». Dans la fenêtre d’impression/partage du navigateur, choisir « Enregistrer au format PDF ». La mise en page d’impression est optimisée pour le format A4.
-
-## Lieu
-Le lien « Ouvrir l’itinéraire » lance Google Maps. Remplacer son URL par la recherche correspondant à l’adresse exacte de la salle.
+## Export PNG
+Le bouton utilise html2canvas via CDN. Une connexion Internet est nécessaire pour charger la bibliothèque et les polices web.
